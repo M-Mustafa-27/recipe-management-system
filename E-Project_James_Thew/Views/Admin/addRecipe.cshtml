@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model E_Project_James_Thew.Models.Recipe;
+
+<div class="recipe-wrapper">
+    <div class="recipe-form-card shadow">
+        <h2 class="form-title mb-4">🍽️ Add a New Recipe</h2>
+        <form action="/Admin/AddRecipe" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="RecipeName">Recipe Name</label>
+                <input type="text" class="form-control" id="RecipeName" name="RecipeName" required asp-for="RecipeName">
+            </div>
+
+            <div class="form-group">
+                <label for="RecipeCategory">Recipe Category</label>
+                <select class="form-control" id="RecipeCategory" name="RecipeCategory" required asp-for="RecipeCategory">
+                    <option value="">-- Select Category --</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="RecipeStatus">Recipe Status</label>
+                <select class="form-control" id="RecipeStatus" name="RecipeStatus" required asp-for="RecipeStatus">
+                    <option value="">-- Select Status --</option>
+                    <option value="Free">Free</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="RecipeImage">Recipe Image</label>
+                <input type="file" class="form-control-file" id="RecipeImage" name="RecipeImage" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="RecipeIngredients">Ingredients <small>(e.g. Salt, Chilli, Rice)</small></label>
+                <input type="text" class="form-control" id="RecipeIngredients" name="RecipeIngredients" required asp-for="RecipeIngredients">
+            </div>
+
+            <div class="form-group">
+                <label for="FullRecipe">Full Recipe</label>
+                <textarea class="form-control" id="FullRecipe" name="FullRecipe" rows="3" required asp-for="FullRecipe"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="RecipeDescription">Recipe Description</label>
+                <textarea class="form-control" id="RecipeDescription" name="RecipeDescription" rows="2" required asp-for="RecipeDescription"></textarea>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn custom-btn">➕ Add Recipe</button>
+            </div>
+        </form>
+    </div>
+</div>

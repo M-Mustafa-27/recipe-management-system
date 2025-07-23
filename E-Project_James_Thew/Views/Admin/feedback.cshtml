@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <h2 class="feedback-title text-center mb-4">📝 Customer Feedbacks</h2>
+    <div class="row justify-content-center">
+        <!-- Static card; replace with @foreach to loop through feedbacks -->
+        <div class="col-md-8 col-lg-6 col-xl-5">
+            <div class="feedback-card p-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div class="feedback-user-id">
+                        <strong>User ID:</strong> U1023
+                    </div>
+                    <form action="/Admin/DeleteFeedback" method="post">
+                        <input type="hidden" name="feedbackId" value="1" />
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </div>
+                <div class="feedback-message">
+                    “I absolutely love your chocolate croissants! The staff is friendly and the delivery was super fast.”
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

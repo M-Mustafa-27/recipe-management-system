@@ -1,0 +1,34 @@
+﻿@model List<E_Project_James_Thew.Models.Recipe>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="page-title mb-4">📃 Recipe List</h2>
+
+@foreach (var recipe in Model)
+{
+    <table class="recipe-table mb-4">
+        <tr>
+            <td class="recipe-image-cell">
+                <img src="@recipe.RecipeImage" alt="Recipe Image" class="recipe-img" />
+            </td>
+            <td class="recipe-details-cell">
+                <div class="recipe-name">@recipe.RecipeName</div>
+                <div class="top-info">
+                    <p><strong>Category:</strong> @recipe.RecipeCategory</p>
+                    <p><strong>Status:</strong> @recipe.RecipeStatus</p>
+                    <p><strong>Ingredients:</strong> @recipe.RecipeIngredients</p>
+                </div>
+                <div class="bottom-info">
+                    <p><strong>Description:</strong> @recipe.RecipeDescription</p>
+                    <p><strong>Full Recipe:</strong> @recipe.FullRecipe</p>
+                </div>
+                <div class="text-end mt-3">
+                    <a asp-action="EditRecipe" asp-route-id="@recipe.RecipeId" class="btn btn-warning btn-sm me-2">✏️ Edit</a>
+                    <a asp-action="DeleteRecipe" asp-route-id="@recipe.RecipeId" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this recipe?');">🗑️ Delete</a>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+}

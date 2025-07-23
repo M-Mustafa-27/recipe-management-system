@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <h2 class="announcement-table-title mb-4">📢 Announcement List</h2>
+    <div class="table-responsive">
+        <table class="table custom-table align-middle">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Static row; replace with @foreach when binding from DB -->
+                <tr>
+                    <td>1</td>
+                    <td>New Bakery Launch</td>
+                    <td>We are excited to announce the grand opening of our new bakery branch in Downtown!</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning me-2">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

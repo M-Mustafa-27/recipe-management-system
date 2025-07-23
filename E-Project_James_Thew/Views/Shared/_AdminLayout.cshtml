@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin Dashboard</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png" />
+    <link href="~/AdminCss/css/style.css" rel="stylesheet" />
+    <link href="~/AdminCss/css/custom.css" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/addRecipes.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/recipeList.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/addContest.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/contestList.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/addAnnouncement.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/announcementList.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/AdminCss/css/feedback.css")" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-wrapper">
+        <!-- Nav Header -->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="@Url.Action("Index", "Home")">
+                    <span class="brand-title"><h3>James Thew</h3></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content clearfix d-flex justify-content-between align-items-center px-3">
+                <!-- Hamburger Menu (Left) -->
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+
+                <!-- Login Icon (Right) -->
+                <div class="admin-login-icon ms-auto">
+                    <a class="text-dark text-decoration-none">
+                        <i class="icon-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a asp-controller="Admin" asp-action="dashboard"><i class="icon-home menu-icon"></i><span class="nav-text">Home</span></a></li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Recipes</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a asp-controller="Admin" asp-action="addRecipe">Add Recipe</a></li>
+                            <li><a asp-controller="Admin" asp-action="recipeList">Recipe List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">
+                            <i class="icon-trophy menu-icon"></i><span class="nav-text">Contest</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a asp-controller="Admin" asp-action="addContest">Add Contest</a></li>
+                            <li><a asp-controller="Admin" asp-action="contentList">Contest List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">
+                            <i class="icon-volume-2 menu-icon"></i><span class="nav-text">Announcement</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a asp-controller="Admin" asp-action="addAnnouncement">Add Announcement</a></li>
+                            <li><a asp-controller="Admin" asp-action="announcementList">Announcement List</a></li>
+                        </ul>
+                    </li>
+                    <li><a asp-controller="Admin" asp-action="feedback"><i class="icon-envelope menu-icon"></i><span class="nav-text">Feedbacks</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content Body -->
+        <div class="content-body">
+            <div class="container-fluid mt-4">
+                @RenderBody()
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-center">
+            <p class="mb-0 py-3">
+                © 2025 <strong>James Thew's Recipe Platform</strong>. All rights reserved. <br />
+                Created by M. Mustafa
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/AdminCss/plugins/common/common.min.js"></script>
+    <script src="~/AdminCss/js/custom.min.js"></script>
+    <script src="~/AdminCss/js/settings.js"></script>
+    <script src="~/AdminCss/js/gleek.js"></script>
+</body>
+</html>

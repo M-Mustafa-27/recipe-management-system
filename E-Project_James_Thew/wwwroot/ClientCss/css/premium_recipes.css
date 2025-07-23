@@ -1,0 +1,114 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    background: #fff;
+    color: #222;
+    background: url("/ClientCss/images/icons-svg/premium_recipes_bg.jpg") no-repeat center center fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.membership-section {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border: 2px solid #eb0029;
+    border-radius: 8px;
+    text-align: center;
+}
+
+    .membership-section h2 {
+        color: #eb0029;
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .membership-section p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1.5px solid #eb0029;
+    border-radius: 5px;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+        border-color: #a3001b;
+    }
+
+button {
+    background-color: #eb0029;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+    button:hover {
+        background-color: #a3001b;
+    }
+
+/* Responsive */
+@media (max-width: 520px) {
+    .membership-section {
+        margin: 20px;
+        padding: 20px 15px;
+    }
+}
+
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
+
+#home_icon {
+    color: white;
+}
+
+    #home_icon:hover {
+        color: #eb0029;
+    }
+
+
+#selected_tag {
+    color: #eb0029 !important;
+}
+
+#inner_selected_tag {
+    background-color: #ffa500;
+    color: black !important;
+    font-size: 115%;
+}

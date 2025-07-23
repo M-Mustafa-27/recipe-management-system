@@ -1,0 +1,105 @@
+/* 🌿 Base Setup */
+body {
+    background-color: #fffefc;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Page Heading */
+.form-page-heading {
+    font-size: 26px;
+    font-weight: 700;
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ✅ Centering Wrapper */
+.announcement-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    width: 100%;
+}
+
+/* 🧾 Form Card */
+.announcement-form-card {
+    background-color: #fff8f0;
+    border: 1px solid #f0e1d2;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    padding: 28px 26px;
+    box-shadow: 0 6px 16px rgba(213, 84, 0, 0.08);
+}
+
+/* 📢 Inner Title */
+.form-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🏷️ Labels */
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5c4033;
+    margin-bottom: 6px;
+}
+
+/* ✍️ Input & Textarea */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d6bfae;
+    padding: 10px 12px;
+    font-size: 14px;
+    background-color: #fffdfb;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: #e67e22;
+        box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+        outline: none;
+    }
+
+/* 📩 Submit Button */
+.custom-btn {
+    background-color: #d35400;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.12);
+}
+
+    .custom-btn:hover {
+        background-color: #e67e22;
+        transform: translateY(-2px);
+    }
+
+/* 📱 Mobile Optimized */
+@media (max-width: 576px) {
+    .announcement-form-card {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .form-title,
+    .form-page-heading {
+        font-size: 20px;
+    }
+
+    .custom-btn {
+        font-size: 14px;
+        width: 100%;
+    }
+}

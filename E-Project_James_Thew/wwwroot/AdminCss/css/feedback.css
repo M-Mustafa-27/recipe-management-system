@@ -1,0 +1,65 @@
+/* 🌟 Feedback Page */
+body {
+    background-color: #fffefc;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📝 Page Title */
+.feedback-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #d35400;
+}
+
+/* 💬 Feedback Card */
+.feedback-card {
+    background-color: #fff8f0;
+    border-radius: 12px;
+    border: 1px solid #f0e1d2;
+    box-shadow: 0 4px 12px rgba(213, 84, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.feedback-card:hover {
+    transform: scale(1.02);
+}
+
+.feedback-user-id {
+    font-size: 14px;
+    color: #5c4033;
+}
+
+.feedback-message {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🗑️ Delete Button */
+.btn-danger {
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 576px) {
+    .feedback-title {
+        font-size: 22px;
+    }
+
+    .feedback-card {
+        padding: 20px;
+    }
+
+    .feedback-message {
+        font-size: 14px;
+    }
+
+    .btn-danger {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

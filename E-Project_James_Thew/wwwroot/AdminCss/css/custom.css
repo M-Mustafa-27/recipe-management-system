@@ -1,0 +1,29 @@
+/* 👤 User Info in Header */
+.header .user-email {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.header .login-icon {
+    font-size: 18px;
+    color: #d35400;
+    margin-left: 5px;
+}
+
+.user-info-wrapper {
+    text-align: center;
+    cursor: default;
+}
+
+.user-icon {
+    font-size: 28px;
+    color: #d35400;
+}
+
+.user-email {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 4px;
+}

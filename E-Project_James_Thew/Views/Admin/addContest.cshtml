@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="page-title mb-4">🏆 Add a New Contest</h2>
+
+<div class="contest-form-wrapper">
+    <div class="contest-form-card shadow">
+        <form action="/Admin/AddContest" method="post">
+            <div class="form-group">
+                <label for="ContestTitle">Contest Title</label>
+                <input type="text" class="form-control" id="ContestTitle" name="ContestTitle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ContestName">Contest Name</label>
+                <input type="text" class="form-control" id="ContestName" name="ContestName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ContestDescription">Contest Description</label>
+                <textarea class="form-control" id="ContestDescription" name="ContestDescription" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ContestDate">Contest Date</label>
+                <input type="date" class="form-control" id="ContestDate" name="ContestDate" required>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn custom-btn">➕ Add Contest</button>
+            </div>
+        </form>
+    </div>
+</div>

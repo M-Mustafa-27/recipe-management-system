@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('/ClientCss/images/icons-svg/contest_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+#home_icon{
+    color: white;
+}
+
+#home_icon:hover{
+    color: #eb0029;
+}
+
+
+#selected_tag{
+    color: #eb0029 !important;
+}
+
+#inner_selected_tag{
+    background-color: #ffa500;
+    color: black !important;
+    font-size: 115%;    
+}

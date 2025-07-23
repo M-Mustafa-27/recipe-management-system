@@ -1,0 +1,27 @@
+body {
+    background: url('/ClientCss/images/icons-svg/announcement_page_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+#home_icon{
+    color: white;
+}
+
+#home_icon:hover{
+    color: #eb0029;
+}
+
+
+

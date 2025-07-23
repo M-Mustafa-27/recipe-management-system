@@ -1,0 +1,194 @@
+﻿@{
+	Layout = "~/Views/Shared/_ClientLayout.cshtml";
+}
+
+
+<!-- -------------------------------------- CAROUSEL ---------------------------------- -->
+<div class="main position-relative">
+    <div class="main_1">
+        <section id="carouselSection" class="center_home">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="carouselimg1" src="~/ClientCss/images/icons-svg/carouselimg1.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <span class="d-block fs-1 family_2">Italian</span>
+                            <h1 class="mt-2" id="cDesc">"Classic Italian flavors with rich sauces, herbs, and hearty tradition."</h1>
+                            <h6 class="mb-0 mt-4"><a id="cBtn" class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipes</a></h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="carouselimg2" src="~/ClientCss/images/icons-svg/carouselimg2.jpg" class="d-block img-fluid" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <span class="d-block fs-1 family_2">Vegetarian</span>
+                            <h1 class="mt-2" id="cDesc">"Fresh, flavorful, and packed with wholesome plant-based goodness."</h1>
+                            <h6 class="mb-0 mt-4"><a id="cBtn" class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipes</a></h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img id="carouselimg3" src="~/ClientCss/images/icons-svg/non-veg.jpg" class="d-block img-fluid" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <span class="d-block fs-1 family_2">Non - Vegetarian</span>
+                            <h1 class="mt-2" id="cDesc">"Hearty meat dishes loaded with bold flavors and savory spices."</h1>
+                            <h6 class="mb-0 mt-4"><a id="cBtn" class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipes</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ------------------------ JAMES INTRO ------------------------ -->
+    <div data-aos="flip-left" id="jamesIntroBox" class="main_2 w-100">
+        <section id="sched">
+            <div class="container-xl">
+                <div class="row row-cols-1 row-cols-md-3 sched_1">
+                    <div class="col p-0">
+                        <div class="sched_1_left py-5 px-4 bg_light text-center">
+                            <hr class="line mx-auto mt-0">
+                            <b class="d-block fs-2 mt-3 mb-3">Chef James Thew</b>
+                            <p>James Thew is a renowned chef at a five-star hotel, known for his signature recipes and TV appearances. Passionate about cooking, he also runs weekend cookery classes to share his culinary skills and connect with food lovers.</p>
+                            <ul class="mb-0 bg-white w-75 mx-auto">
+                                <li class="d-flex">
+                                    <span class="bg_red text-white fs-1 d-inline-block span_1"><i class="bi-telephone"></i></span>
+                                    <span class="text-start p-3">
+                                        <b class="d-block text-muted font_14 mt-1">For Contact 24/7</b>
+                                        <b class="d-block mt-1 fs-4">+214312890</b>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="sched_1_mid">
+                            <img src="~/ClientCss/images/icons-svg/james.jpg" class="img-fluid" alt="abc">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="sched_1_right py-5 px-5 bg_red">
+                            <p id="txt">Beyond the kitchen, James Thew inspires food enthusiasts through his bestselling recipe books, TV shows, and interactive sessions. His creative flair and love for experimenting with flavors make him a favorite among aspiring chefs and home cooks alike.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- ---------------------- FREE RECIPES ------------------------  -->
+<section id="menu_h" class="pt-5 pb-5 bg_dark">
+    <div class="container-xl">
+        <div class="menu_h1 row text-center mb-5">
+            <div class="col-md-12">
+                <h5 class="text-white line_text">Recipes</h5>
+                <h1 class="mt-3 text-white font_50">Discover Our Free Recipes</h1>
+            </div>
+        </div>
+        <div class="menu_h2 row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img id="freeRecipeimg" src="~/ClientCss/images/icons-svg/Orange_juice.jpg" class="rounded-circle" alt="abc"></div>
+                    <h2 class="text-white mt-4 mb-4">Orange Juice</h2>
+                    <p class="card-description text-white">Orange juice is a refreshing beverage made from freshly squeezed oranges, rich in vitamin C.</p>
+                    <h6 class="mb-0 mt-4"><a class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipe</a></h6>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img id="freeRecipeimg" src="~/ClientCss/images/icons-svg/beef-steak.jpg" class="rounded-circle" alt="abc"></div>
+                    <h2 class="text-white mt-4 mb-4">Beef Steak</h2>
+                    <p class="card-description text-white">Beef steak is a tender and juicy cut of meat, seasoned and grilled to perfection, often served with vegetables or fries.</p>
+                    <h6 class="mb-0 mt-4"><a class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipe</a></h6>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img id="freeRecipeimg" src="~/ClientCss/images/icons-svg/pizza.jpg" class="rounded-circle" alt="abc"></div>
+                    <h2 class="text-white mt-4 mb-4">Pizza</h2>
+                    <p class="card-description text-white">Pizza is a beloved dish with a crispy crust, savory tomato sauce, and melted cheese, offering endless topping options.</p>
+                    <h6 class="mb-0 mt-4"><a class="button rounded-pill d-block text-center" asp-controller="Client" asp-action="free_recipes.html">View Recipe</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- PROMOTION SECTION ------------------------ -->
+<section id="spec" class="pt-5 pb-5 bg_light">
+    <div class="container-xl">
+        <div class="menu_h1 row text-center mb-5">
+            <div class="col-md-12">
+                <h5 class="line_text">Promotion Section</h5>
+                <h1 class="mt-3 font_50" id="pr_line">
+                    We proudly collaborate with top-tier brands that share our passion for quality food and inspired cooking. Explore their products and elevate your culinary journey with every dish.
+                </h1>
+            </div>
+        </div>
+        <div class="menu_h2 row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img src="~/ClientCss/images/icons-svg/Nestle_logo.jpg" class="rounded-circle img-fluid" alt="abc"></div>
+                    <h2 class="text-center mt-4 mb-4"><a class="text-white" href="https://www.nestle.pk/">Nestlé</a></h2>
+                    <span class="text-center text-white d-block font_12 border-top border-bottom pt-2 pb-2 mt-3">WATER, DAIRY, CEREALS</span>
+                    <p class="text-white text-center">Nestlé is a Swiss food giant offering nutrition, health, and wellness products.</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img src="~/ClientCss/images/icons-svg/lotte_logo.jpg" class="rounded-circle img-fluid" alt="abc"></div>
+                    <h2 class="text-center mt-4 mb-4"><a class="text-white" href="https://www.lotte.co.kr/global/en/main.do">Lotte</a></h2>
+                    <span class="text-center text-white d-block font_12 border-top border-bottom pt-2 pb-2 mt-3">SNACKS, ICE CREAM, CONFECTIONERY</span>
+                    <p class="text-white text-center">Lotte is known for snacks, ice creams, and sweets that appeal to all ages.</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img src="~/ClientCss/images/icons-svg/trs_logo.png" class="rounded-circle img-fluid" alt="abc"></div>
+                    <h2 class="text-center mt-4 mb-4"><a class="text-white" href="https://www.trsfood.com/">TRS</a></h2>
+                    <span class="text-center text-white d-block font_12 border-top border-bottom pt-2 pb-2 mt-3">SPICES, HERBS, SEASONINGS</span>
+                    <p class="text-white text-center">TRS offers authentic spices and herbs for traditional cooking.</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="menu_h2_left bg_dark1 py-5 px-4 rounded_30 w-100">
+                    <div class="text-center"><img src="~/ClientCss/images/icons-svg/danish_crown.jpg" class="rounded-circle img-fluid" alt="abc"></div>
+                    <h2 class="text-center mt-4 mb-4"><a class="text-white" href="https://www.danishcrown.com/global/">Danish Crown</a></h2>
+                    <span class="text-center text-white d-block font_12 border-top border-bottom pt-2 pb-2 mt-3">BEEF, CHICKEN, LAMB</span>
+                    <p class="text-white text-center">Danish Crown supplies premium meat and processed products worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- CONTESTS & ANNOUNCEMENTS ------------------------ -->
+<section id="con_ann" class="pt-5 pb-5">
+    <div class="container-xl">
+        <div class="menu_h1 row text-center mb-5">
+            <div class="col-md-12">
+                <h5 class="line_text text-white">View Our Latest Contests & Announcements</h5>
+                <h1 class="text-white mt-3 font_50" id="pr_line">
+                    We regularly host exciting food contests and share announcements to keep our community engaged and creative.
+                </h1>
+            </div>
+        </div>
+
+        <div id="cBox2">
+            <h3 class="text-white">Contests</h3>
+            <h6 class="mb-0 mt-4"><a class="button rounded-pill text-center" href="contest.html">Check Latest Contests</a></h6>
+        </div><br>
+
+        <div id="cBox">
+            <h3 class="text-white">Announcements</h3>
+            <h6 class="mb-0 mt-4"><a class="button rounded-pill d-block text-center" href="announcement.html">Check Latest Announcements</a></h6>
+        </div>
+    </div>
+</section>

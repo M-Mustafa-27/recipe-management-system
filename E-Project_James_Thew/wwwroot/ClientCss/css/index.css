@@ -1,0 +1,320 @@
+/* --------------------------------- BASIC STYLE ---------------------------------- */
+.button:hover {
+    background-color: orange;
+    color: white;
+    transition: 0.2s ease;
+}
+
+#tagdiv {
+    margin-left: 4%;
+}
+
+#txt {
+    font-size: 110%;
+    color: white;
+}
+
+#phar1, #phar2, #phar3 {
+    color: white;
+}
+
+#cDesc {
+    font-size: 27px;
+    font-style: italic;
+}
+
+#cBtn {
+    width: 13%;
+    box-sizing: content-box;
+    text-align: center;
+    margin: auto;
+}
+
+#freeRecipeimg {
+    height: 220px;
+    width: 230px;
+    object-fit: cover;
+}
+
+/********************* CAROUSEL ********************/
+.carousel-caption {
+    background-color: var(--bg_back) !important;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 200px 140px 0px 140px;
+    text-align: left;
+}
+
+    .carousel-caption h1 {
+        font-size: 85px;
+    }
+
+#carouselimg1, #carouselimg2, #carouselimg3 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/********************* SHED (CHEF SECTION) ********************/
+.sched_1_left .span_1 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.sched_1_left, .sched_1_right {
+    min-height: 560px;
+}
+
+.sched_1_mid img {
+    min-height: 560px;
+    max-height: 500px;
+    width: auto;
+    margin-bottom: 0;
+}
+
+.main_2 {
+    top: 900px;
+}
+
+#jamesIntroBox {
+    margin-top: -0.5%;
+}
+
+/********************* FREE RECIPES ********************/
+#menu_h {
+    margin-top: 570px;
+}
+
+.menu_h2_left img {
+    border: 1px solid var(--border_dark);
+    padding: 15px;
+}
+
+.menu_h2_left {
+    width: 100%;
+}
+
+.card-description {
+    color: white;
+}
+
+/********************* PROMOTION ********************/
+#pr_line {
+    font-size: 100%;
+}
+
+#spec .menu_h2_left img {
+    max-width: 100%;
+    height: auto;
+}
+
+/********************* CONTESTS & ANNOUNCEMENTS ********************/
+#cBox, #cBox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+    #cBox a, #cBox2 a {
+        margin-top: 10px;
+        width: 50%;
+    }
+
+#con_ann {
+    background-color: #1e1e1e;
+}
+
+.footer_1 {
+    margin-top: 0.5%;
+}
+
+/********************* NAV DROPDOWN ********************/
+.dropdown-menu.bg-danger {
+    background-color: #e91034e3 !important;
+    border: 2px solid black !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    padding: 0;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu > li > a.dropdown-item {
+    color: white !important;
+    border-bottom: 2px solid black;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu > li:last-child > a.dropdown-item {
+    border-bottom: none;
+}
+
+.dropdown-menu > li > a.dropdown-item:hover {
+    background-color: #ffa500 !important;
+    color: black !important;
+    font-weight: 700;
+    padding-left: 22px;
+    font-size: 1.05rem;
+}
+
+/********************* RESPONSIVE QUERIES ********************/
+@media screen and (max-width: 767px) {
+    .carousel-caption {
+        position: static !important;
+        padding: 15px 15px 50px 15px;
+        background: var(--bs-dark) !important;
+        text-align: center;
+    }
+
+        .carousel-caption h1 {
+            font-size: 35px;
+        }
+
+        .carousel-caption span.fs-1 {
+            font-size: 28px;
+        }
+
+    #cDesc {
+        font-size: 18px;
+    }
+
+    #cBtn {
+        width: 60%;
+    }
+
+    .main_2 {
+        position: static !important;
+    }
+
+    .sched_1_left, .sched_1_right {
+        min-height: auto;
+        padding: 30px 15px !important;
+    }
+
+        .sched_1_right b {
+            margin-top: 0 !important;
+        }
+
+    .sched_1_mid img {
+        min-height: auto;
+        width: 100%;
+    }
+
+    #menu_h {
+        margin-top: 0;
+    }
+
+    #pr_line {
+        font-size: 16px;
+    }
+
+    #cBox h3, #cBox2 h3 {
+        font-size: 22px;
+    }
+
+    #cBox a, #cBox2 a {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .center_home img {
+        min-height: 500px;
+    }
+
+    .carousel-caption {
+        padding: 100px 120px 0px 120px;
+    }
+
+        .carousel-caption h1 {
+            font-size: 45px;
+        }
+
+    #cDesc {
+        font-size: 22px;
+    }
+
+    #cBtn {
+        width: 35%;
+    }
+
+    .sched_1_left ul {
+        width: 100% !important;
+    }
+
+    .sched_1_left {
+        padding: 30px 15px !important;
+    }
+
+        .sched_1_left .fs-2 {
+            font-size: 22px !important;
+        }
+
+    .sched_1_right {
+        padding: 50px 15px !important;
+    }
+
+    .main_2 {
+        position: static !important;
+    }
+
+    #menu_h {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .center_home img {
+        min-height: 600px;
+    }
+
+    .sched_1_left {
+        padding: 30px 15px !important;
+    }
+
+        .sched_1_left .fs-2 {
+            font-size: 22px !important;
+        }
+
+    .sched_1_right {
+        padding: 50px 15px !important;
+    }
+
+    .main_2 {
+        position: static !important;
+    }
+
+    #menu_h {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1320px) {
+    .main_2 {
+        top: 580px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main_2 {
+        top: 680px;
+    }
+}
+
+/********************* UTILITY ********************/
+#selected_footer_tag > a {
+    color: #eb0029;
+}

@@ -1,0 +1,148 @@
+/*
+Template Name: Foodu
+File: Layout CSS
+Author: TemplatesOnWeb
+Author URI: https://www.templateonweb.com/
+Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
+*/
+
+/*********************about****************/
+.about_pg1_left1 img{
+   width:90%;
+ }
+.about_pg1_left2 .span_1{
+   width:100px;
+   height:100px;
+   line-height:100px;
+ }
+.about_pg1_left2{
+  width:55%;
+  right:0;
+ }
+ 
+.team_1i1i1 ul li a{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	color:var(--bs-white);
+	transition: 0.3s; 
+	border-radius:50%;
+ }
+.team_1i1i1 ul li a:hover{
+	color:var(--red); 
+	background:var(--bs-white)!important;
+	transition: 0.3s; 
+ }
+.team_1i:hover .team_1i1i1 ul li a{
+	display:block!important; 
+	transition: 0.3s;
+ }
+.team_1i1i1{
+	display:none;
+	transition: 0.3s;
+ }
+.team_1i:hover .team_1i1i1{
+   display:block;
+   transition: 0.3s;
+ }
+ 
+.dashed{
+  color:var(--border_light);
+ }
+.menu_pg1_left img{
+     border-left:15px solid var(--bg_light);
+    border-top:15px solid var(--bg_light);
+	 border-bottom:15px solid var(--bs-white);
+    border-right:15px solid var(--bs-white);
+ }
+.menu_pg1_left {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-right: 50px;
+}
+.menu_pg1_left:after {
+    position: absolute;
+    right: 0;
+    top: -50%;
+    content: "";
+    height: 200px;
+    width: 500%;
+    background: var(--red);
+    z-index: -1;
+    transform: skewY(20deg);
+}
+
+.book_1_left{
+  border-right:5px solid var(--red);
+ }
+/*********************about_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.about_pg1_left2 {
+  width:75%;
+ }
+.about_pg1_right{
+  margin-top:20px;
+ }
+.team_1i {
+  margin-top:8px;
+  margin-bottom:8px;
+  }
+.proj_h1r {
+  text-align:left!important;
+ }
+.testim_1i {
+  margin-top:8px;
+  margin-bottom:8px;
+ }
+.menu_pg1_left:after {
+   display:none;
+}
+.menu_pg1_left img {
+    width:100%;
+}
+.menu_pg1_left{
+  padding-right:0;
+  margin-bottom:20px;
+ }
+ }
+
+
+@media (min-width:576px) and (max-width:767px) {
+
+ }
+ 
+@media (min-width:768px) and (max-width:991px) {
+.about_pg1_left2 {
+  width:75%;
+ }
+.team_1i1i1 ul li a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size:12px;
+}
+.menu_pg1_left img{
+  width:300px;
+  height:300px;
+ }
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
+
+@media (min-width:1201px) and (max-width:1300px) {
+
+ }
+@media screen and (min-width : 1400px){
+#menu_pg{
+  padding-bottom:100px!important; 
+ }
+
+ }
+
+

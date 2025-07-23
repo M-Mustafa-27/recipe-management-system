@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|c:\\users\\nisha com\\desktop\\recipe_management\\e-project_james_thew\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|solutionrelative:e-project_james_thew\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|c:\\users\\nisha com\\desktop\\recipe_management\\e-project_james_thew\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|solutionrelative:e-project_james_thew\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|c:\\users\\nisha com\\desktop\\recipe_management\\e-project_james_thew\\views\\admin\\editrecipe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|solutionrelative:e-project_james_thew\\views\\admin\\editrecipe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|c:\\users\\nisha com\\desktop\\recipe_management\\e-project_james_thew\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29015C05-4256-4844-97EE-C196F2E81E41}|E-Project_James_Thew\\E-Project_James_Thew.csproj|solutionrelative:e-project_james_thew\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "E-Project_James_Thew\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "E-Project_James_Thew\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAiwEAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:42:45.153Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\appsettings.json",
+              "RelativeDocumentMoniker": "E-Project_James_Thew\\appsettings.json",
+              "ToolTip": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\appsettings.json",
+              "RelativeToolTip": "E-Project_James_Thew\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-23T21:44:11.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Program.cs",
+              "RelativeDocumentMoniker": "E-Project_James_Thew\\Program.cs",
+              "ToolTip": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Program.cs",
+              "RelativeToolTip": "E-Project_James_Thew\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T21:44:04.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditRecipe.cshtml",
+              "DocumentMoniker": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Views\\Admin\\EditRecipe.cshtml",
+              "RelativeDocumentMoniker": "E-Project_James_Thew\\Views\\Admin\\EditRecipe.cshtml",
+              "ToolTip": "C:\\Users\\nisha com\\Desktop\\Recipe_Management\\E-Project_James_Thew\\Views\\Admin\\EditRecipe.cshtml",
+              "RelativeToolTip": "E-Project_James_Thew\\Views\\Admin\\EditRecipe.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T13:01:20.162Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

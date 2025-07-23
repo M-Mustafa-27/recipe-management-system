@@ -1,0 +1,259 @@
+﻿@{
+	Layout = null;
+}
+
+@model IEnumerable<Contest>;
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chef James</title>
+	<link href="~/ClientCss/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/ClientCss/css/global.css" rel="stylesheet">
+	<link href="~/ClientCss/css/index.css" rel="stylesheet">
+	<link href="~/ClientCss/css/contest.css" rel="stylesheet">
+	<!-- Include SweetAlert2 from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="icon" href="~/ClientCss/images/icons-svg/icon.png" />
+
+</head>
+<body>
+
+
+
+	<!-- ------------------------- NAVBAR ------------------------- -->
+	<section id="header">
+		<nav class="navbar navbar-expand-lg navbar-light w-100 pt-3 pb-3 position-relative">
+			<div class="container-xl">
+				<a class="d-flex logo text-white" href="index.html">
+					<b id="James_Text" class="font_50 family_2"><i class="bi-cup-straw col_red"></i>James Thew</b>
+				</a>
+				<button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
+					<img src="~/ClientCss/images/icons-svg/list.svg" width="40" height="40" alt="Open TemplateOnweb website menu" />
+				</button>
+				<div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+					<div class="offcanvas-header shadow">
+						<a class="d-flex logo text-white" href="index.html">
+							<b class="font_50  family_2"><i class="bi-cup-straw col_red"></i> </b>
+						</a>
+						<img src="~/ClientCss/images/icons-svg/x.svg" width="40" height="40" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
+
+					</div>
+					<div class="offcanvas-body pt-0 align-items-center" id="tagdiv">
+						<ul class="navbar-nav align-items-lg-center ms-auto">
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle active fs-4 ps-0" asp-controller="Client" asp-action="Index" title="Visit home page">
+									<i id="home_icon" class="bi bi-house"></i>
+								</a>
+							</li>
+
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Recipes <img src="~/ClientCss/images/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+								</a>
+								<ul class="dropdown-menu bg-danger border border-black rounded-3 overflow-hidden" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item border-bottom border-black py-2 px-3" asp-controller="Client" asp-action="freeRecipes">Free Recipes</a></li>
+									<li><a class="dropdown-item border-bottom border-black py-2 px-3" asp-controller="Client" asp-action="premiumRecipes">Premium Recipes</a></li>
+								</ul>
+							</li>
+
+
+							<li class="nav-item">
+								<a id="selected_tag" class="nav-link dropdown-toggle" asp-controller="Client" asp-action="contest">
+									contest
+								</a>
+							</li>
+
+
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" asp-controller="Client" asp-action="announcement">
+									Announcement
+								</a>
+							</li>
+
+
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" asp-controller="Client" asp-action="membership">
+									Membership
+								</a>
+							</li>
+
+
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" asp-controller="Client" asp-action="feedback">
+									Feedback
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" asp-controller="Client" asp-action="contact">
+									Contact us
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			</div>
+		</nav>
+	</section>
+
+
+
+	<!-- ------------------------------ CONTENT --------------------------- -->
+
+	<div id="contest_card" class="container mt-5">
+		<div class="d-flex flex-column gap-5">
+			@foreach (var contest in Model)
+			{
+				<div class="w-100" data-aos="fade-up">
+					<div class="bg_dark1 rounded_30 p-4 d-flex flex-column justify-content-between mx-auto" style="max-width: 900px;">
+						<div>
+							<h3 class="text-white mb-2">@contest.ContestName</h3>
+							<p class="text-light mb-1"><strong>Description:</strong> @contest.ContestDescription</p>
+							<p class="text-light">
+								<strong>Date:</strong> @(contest.ContestDate?.ToString("MMMM dd, yyyy") ?? "Date not set")
+							</p>
+						</div>
+						<a asp-controller="Client" asp-action="participate" asp-route-id="@contest.ContestId" class="button rounded-pill mt-3">
+							Participate
+						</a>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<!-- ------------------------------- FOOTER ---------------------------------- -->
+
+	<section id="footer" class="pb-5">
+		<div class="container-xl">
+			<div class="footer_1 row  bg_dark rounded_10 pt-5  mx-0 px-3">
+				<div class="col-md-4">
+					<div class="footer_1_left px-3">
+						<b class="font_50 family_2 d-block mb-4 lh-1"><a class="text-white" href="#"><i class="bi-cup-straw col_red"></i>James Thew</a></b>
+						<p class="text-white-50">"Stay tuned for the latest flavors, contests, and culinary updates!"</p>
+
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer_1_left">
+						<b class="fs-4 text-white mb-4 d-block mt-2">Explore</b>
+						<div class="row footer_1ism">
+							<span class="col-md-12 col-6  d-inline-block"><a class="link text-white-50" asp-controller="Client" asp-action="Index">Home</a></span>
+							<span class="mt-3 col-md-12 col-6  d-inline-block"><a class="text-white-50 link" asp-controller="Client" asp-action="freeRecipes">Recipes</a></span>
+							<span id="selected_footer_tag" class="mt-3 col-md-12 col-6  d-inline-block"><a class="link" asp-controller="Client" asp-action="contest">Contest</a></span>
+							<span class="mt-3 col-md-12 col-6  d-inline-block"><a class="text-white-50 link" asp-controller="Client" asp-action="announcement">Announcement</a></span>
+							<span class="mt-3 col-md-12 col-6  d-inline-block"><a class="text-white-50 link" asp-controller="Client" asp-action="membership">Membership</a></span>
+							<span class="mt-3 col-md-12 col-6  d-inline-block"><a class="text-white-50 link" asp-controller="Client" asp-action="feedback">Feedback</a></span>
+							<span class="mt-3 col-md-12 col-6  d-inline-block"><a class="text-white-50 link" asp-controller="Client" asp-action="contact">Contact</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer_1_left">
+						<b class="fs-4 text-white mb-4 d-block mt-2">Contact Info</b>
+						<div class="row footer_1_left_inner">
+							<div class="col-md-2 col-2">
+								<div class="footer_1_left_inner_left">
+									<span class="d-inline-block border rounded-circle span_1 text-white-50 text-center"><i class="bi-geo-alt"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-10">
+								<div class="footer_1_left_inner_right">
+									<span class="d-block text-white-50 font_15">
+										170 12h Street, Office 385 London, De 22541
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row footer_1_left_inner mt-3">
+							<div class="col-md-2 col-2">
+								<div class="footer_1_left_inner_left">
+									<span class="d-inline-block border rounded-circle span_1 text-white-50 text-center"><i class="bi-telephone"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-10">
+								<div class="footer_1_left_inner_right">
+									<span class="d-block  font_15">
+										<a class="text-white-50 link" href="#">+214312890</a>
+
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row footer_1_left_inner mt-3">
+							<div class="col-md-2 col-2">
+								<div class="footer_1_left_inner_left">
+									<span class="d-inline-block border rounded-circle span_1 text-white-50 text-center"><i class="bi-envelope"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-10">
+								<div class="footer_1_left_inner_right">
+									<span class="d-block  font_15">
+										<a class="text-white-50 link" href="https://mail.google.com/">chefjames123@gmail.com</a> <br>
+
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer_1_left">
+						<b class="fs-4 text-white mb-4 d-block mt-2">Buy Membership</b>
+						<p class="text-white-50">"Unlock exclusive, chef-curated recipes with a premium membership — click below to join now and elevate your cooking!"</p>
+
+						<h6 class="mb-0 mt-4"><a class="button rounded-pill d-block text-center" href="membership.html">Buy Membership</a></h6>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="row  footer_2 pt-4 pb-4 bg-white mx-auto shadow rounded_10 px-3">
+				<div class="col-md-8">
+					<div class="footer_bottom1_left mt-1">
+						<p class="mb-0">© 2025 James Thew. All Rights Reserved | Design by <a class="col_red fw-bold" href="#" onclick="showCustomAlert(); return false;">Squadron Five</a></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_bottom1_right text-end">
+						<ul class="mb-0 social_icon1 font_14">
+							<li class="d-inline-block"><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+							<li class="d-inline-block ms-1"><a href="https://x.com/"><i class="bi bi-twitter"></i></a></li>
+							<li class="d-inline-block ms-1"><a href="https://pk.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+							<li class="d-inline-block ms-1"><a href="https://www.instagram.com/"><i class="bi  bi-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="~/ClientCss/js/bootstrap.bundle.min.js"></script>
+	<script src="~/ClientCss/js/theme.min.js"></script>
+
+</body>
+</html>
